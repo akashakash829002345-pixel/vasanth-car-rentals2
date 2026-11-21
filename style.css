@@ -1,0 +1,98 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--cream:#f6f4ef;--white:#fff;--ink:#292824;--muted:#77756f;--gold:#b99a68;--gold-dark:#94764a;--line:#e8e3d9;--soft:#eeebe4}
+html{scroll-behavior:smooth;scroll-padding-top:95px}
+body{font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--cream);line-height:1.7}
+a{text-decoration:none;color:inherit}
+button,input,select,textarea{font:inherit}
+.site-header{height:82px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;gap:28px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.brand{display:flex;flex-direction:column;line-height:1.15;flex-shrink:0}
+.brand span{font-size:21px;font-weight:700;letter-spacing:2.5px}
+.brand small{font-size:9px;font-weight:700;letter-spacing:4px;color:var(--gold-dark)}
+.nav{display:flex;gap:28px;align-items:center}
+.nav a{font-size:13px;font-weight:600;transition:color .2s}
+.nav a:hover{color:var(--gold-dark)}
+.header-cta{padding:11px 18px;background:var(--ink);color:white;font-size:12px;font-weight:700}
+.header-cta span{color:#d9bd91;margin-left:8px}
+.menu-toggle{display:none;border:0;background:transparent;font-size:24px;color:var(--ink)}
+.hero{min-height:660px;position:relative;display:flex;align-items:center;padding:85px 9%;color:#fff;background:#333 url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2000&q=85") center 55%/cover no-repeat}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,20,19,.86),rgba(20,20,19,.28) 75%,rgba(20,20,19,.12))}
+.hero-content{position:relative;z-index:1;max-width:680px}
+.kicker{font-size:10px;letter-spacing:3px;font-weight:700;color:var(--gold-dark);margin-bottom:17px}
+.hero .kicker{color:#e2c99e}
+.hero h1,.intro h2,.section-top h2,.booking-intro h2,.contact h2{font-family:"Playfair Display",serif;font-weight:500;line-height:1.12}
+.hero h1{font-size:clamp(48px,7vw,82px);margin-bottom:22px}
+.hero h1 em,.booking-intro h2 em,.contact h2 em{font-weight:500;color:#d9bd91}
+.hero-copy{max-width:510px;color:#e9e6df;font-size:15px;margin-bottom:29px}
+.hero-buttons{display:flex;flex-wrap:wrap;gap:13px}
+.btn{min-height:48px;padding:12px 22px;display:inline-flex;align-items:center;justify-content:center;gap:15px;font-size:12px;font-weight:700;border:1px solid transparent;cursor:pointer;transition:.2s}
+.btn-gold{background:var(--gold);color:#fff;border-color:var(--gold)}
+.btn-gold:hover{background:var(--gold-dark);border-color:var(--gold-dark);transform:translateY(-2px)}
+.btn-light-outline{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-light-outline:hover{background:#fff;color:var(--ink)}
+.hero-meta{margin-top:31px;color:#e8e1d5;font-size:12px;letter-spacing:.4px}
+.pin{font-size:19px;margin-right:7px;color:#d9bd91}
+.hero-caption{position:absolute;right:7%;bottom:32px;font-size:9px;letter-spacing:3px;color:#eee}
+.section{padding:94px 7%}
+.intro{text-align:center;max-width:850px;margin:auto}
+.intro h2{font-size:clamp(39px,5vw,54px);margin-bottom:20px}
+.intro>p:last-child{max-width:610px;margin:auto;color:var(--muted);font-size:14px}
+.services{background:#fff}
+.section-top{max-width:1160px;margin:0 auto 43px;display:flex;justify-content:space-between;align-items:end;gap:35px}
+.section-top h2,.booking-intro h2,.contact h2{font-size:clamp(38px,5vw,53px)}
+.section-top>p{max-width:330px;color:var(--muted);font-size:13px}
+.service-grid{max-width:1160px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.service-card{position:relative;padding:32px 27px 35px;border:1px solid var(--line);background:#fff;min-height:225px;transition:.25s}
+.service-card:hover,.car-card:hover{transform:translateY(-5px);box-shadow:0 15px 35px rgba(40,35,25,.08)}
+.service-no{position:absolute;right:22px;top:20px;color:#b9b3a8;font-size:10px;letter-spacing:2px}
+.service-symbol{width:42px;height:42px;background:var(--soft);color:var(--gold-dark);display:grid;place-items:center;font-size:22px;margin-bottom:23px}
+.service-card h3,.car-details h3{font-family:"Playfair Display",serif;font-size:21px;font-weight:600;margin-bottom:9px}
+.service-card p,.car-details p{color:var(--muted);font-size:12px;line-height:1.8}
+.fleet-top{align-items:end}
+.car-grid{max-width:1160px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.car-card{background:#fff;border:1px solid var(--line);transition:.25s;min-width:0}
+.car-photo{height:225px;position:relative;background:#e9e6df;overflow:hidden}
+.car-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.car-card:hover .car-photo img{transform:scale(1.04)}
+.photo-label{position:absolute;left:15px;bottom:14px;background:rgba(255,255,255,.92);padding:5px 9px;font-size:8px;letter-spacing:1.5px;font-weight:700}
+.image-error{background:linear-gradient(135deg,#e9e6df,#d8d2c5)}
+.image-error:after{content:"VASANTH CAR RENTALS";position:absolute;inset:0;display:grid;place-items:center;color:#8e7958;font-size:12px;letter-spacing:3px}
+.car-details{padding:21px}
+.car-details h3{font-size:20px}
+.car-details a{display:flex;justify-content:space-between;align-items:center;margin-top:17px;padding-top:12px;border-top:1px solid var(--line);color:var(--gold-dark);font-size:11px;font-weight:700}
+.car-details a b{font-size:17px}
+.image-note{text-align:center;color:var(--muted);font-size:10px;margin:23px auto 0}
+.booking{background:#eeebe4;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:65px;align-items:start}
+.booking-intro{max-width:390px;padding-top:35px}
+.booking-intro h2{margin-bottom:20px}
+.booking-intro>p:not(.kicker){color:var(--muted);font-size:13px}
+.booking-phone{margin-top:42px;display:flex;flex-direction:column;gap:5px}
+.booking-phone small,.contact-row small{font-size:9px;letter-spacing:2px;color:var(--gold-dark);font-weight:700}
+.booking-phone a{font-size:22px;font-weight:700}
+.booking-form{background:#fff;padding:34px;border:1px solid var(--line)}
+.form-heading{margin-bottom:24px}
+.form-heading h3{font-family:"Playfair Display",serif;font-size:27px}
+.form-heading p,.form-help{font-size:10px;color:var(--muted)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.form-grid label{font-size:11px;font-weight:700;display:block}
+.form-grid input,.form-grid select,.form-grid textarea{display:block;width:100%;margin-top:7px;padding:12px;border:1px solid var(--line);background:#faf9f6;color:var(--ink);border-radius:0;outline:none;font-size:12px}
+.form-grid input:focus,.form-grid select:focus,.form-grid textarea:focus{border-color:var(--gold)}
+.form-grid textarea{resize:vertical}
+.form-grid .full{grid-column:1/-1}
+.submit-btn{width:100%;margin-top:23px}
+.form-help{text-align:center;margin-top:12px}
+.form-status{font-size:12px;color:var(--gold-dark);margin-top:8px}
+.contact{text-align:center;background:#fff}
+.contact>p:not(.kicker){font-size:13px;color:var(--muted)}
+.contact-row{max-width:900px;margin:42px auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.contact-row>div{display:flex;flex-direction:column;gap:7px}
+.contact-row strong{font-size:13px}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--gold-dark)}
+.footer{background:var(--ink);color:#fff;text-align:center;padding:38px 20px}
+.footer .brand{align-items:center}
+.footer .brand span{color:#fff}
+.footer p{font-size:12px;color:#c9c4ba;margin:12px 0}
+.footer>small{font-size:10px;color:#aaa69e}
+.whatsapp-float{position:fixed;right:22px;bottom:22px;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:white;font-size:19px;font-weight:700;z-index:30;box-shadow:0 5px 18px rgba(0,0,0,.18)}
+@media(max-width:900px){.site-header{padding:0 4%;gap:16px}.nav{gap:15px}.nav a{font-size:12px}.booking{grid-template-columns:1fr;gap:30px}.booking-intro{padding-top:0}.car-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.site-header{height:72px;padding:0 5%;justify-content:space-between}.menu-toggle{display:block;order:3}.header-cta{display:none}.nav{display:none;position:absolute;top:71px;left:0;right:0;background:#fff;padding:18px 7%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:13px}.nav.open{display:flex}.hero{min-height:590px;padding:65px 7%;background-position:58% center}.hero h1{font-size:49px}.hero-caption{font-size:8px}.section{padding:68px 6%}.section-top{display:block}.section-top>p{margin-top:18px}.service-grid,.car-grid,.contact-row{grid-template-columns:1fr}.car-photo{height:230px}.booking-form{padding:23px 17px}.form-grid{grid-template-columns:1fr}.form-grid .full{grid-column:auto}.intro h2{font-size:42px}}
