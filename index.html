@@ -1,325 +1,461 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
-  <meta name="google-site-verification" content="wDdrBfFe9D1JR8KEFcnwsx6pF4SfvuXKY8Okq0gsYRE" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vasanth Car Rentals | Bapatla</title>
-<meta name="description" content="Book premium car rentals in Bapatla. Dzire, Innova Crysta, Ertiga, Etios and Kia Carens. Self-drive and driver services.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <!-- Google Search Console verification: KEEP THIS -->
+  <meta name="google-site-verification" content="wDdrBfFe9D1JR8KEFcnwsx6pF4SfvuXKY8Okq0gsYRE">
 
-<style>
-:root {
-  --dark: #202720;
-  --gold: #b99561;
-  --cream: #f7f5ef;
-  --white: #ffffff;
-  --muted: #777d76;
-}
+  <!-- SEO -->
+  <title>Vasanth Car Rentals | Car Rental in Bapatla</title>
+  <meta name="description" content="Looking for car rental in Bapatla? Contact Vasanth Car Rentals for Dzire, Innova Crysta, Ertiga, Etios and Kia Carens. Self-drive, driver and outstation travel enquiries.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Vasanth Car Rentals">
+  <link rel="canonical" href="https://akashakash829002345-pixel.github.io/vasanth-car-rentals2/">
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  <!-- Social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vasanth Car Rentals - Car Rental in Bapatla">
+  <meta property="og:description" content="Explore car rental options in Bapatla. Dzire, Innova Crysta, Ertiga, Etios and Kia Carens.">
+  <meta property="og:url" content="https://akashakash829002345-pixel.github.io/vasanth-car-rentals2/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=85">
 
-html { scroll-behavior: smooth; }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
-body {
-  font-family: 'DM Sans', sans-serif;
-  background: var(--cream);
-  color: var(--dark);
-  line-height: 1.6;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 7%;
-  background: white;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 3px 15px #0000000b;
-}
-
-.logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.logo span { color: var(--gold); }
-
-nav {
-  display: flex;
-  gap: 26px;
-}
-
-nav a {
-  color: var(--dark);
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-nav a:hover { color: var(--gold); }
-
-.hero {
-  min-height: 570px;
-  display: flex;
-  align-items: center;
-  padding: 70px 8%;
-  color: white;
-  background:
-    linear-gradient(90deg, #111d 0%, #1119 55%, #1114 100%),
-    url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1800&q=85")
-    center/cover;
-}
-
-.hero-content { max-width: 650px; }
-
-.eyebrow {
-  color: #e6c795;
-  letter-spacing: 3px;
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-}
-
-.hero h1 {
-  font-size: clamp(42px, 6vw, 70px);
-  line-height: 1.12;
-  margin: 18px 0;
-}
-
-.hero p {
-  max-width: 510px;
-  color: #eee;
-  font-size: 17px;
-}
-
-.btn {
-  display: inline-block;
-  background: var(--gold);
-  color: white;
-  text-decoration: none;
-  border: none;
-  border-radius: 4px;
-  padding: 14px 26px;
-  font: inherit;
-  font-weight: 700;
-  cursor: pointer;
-  margin-top: 24px;
-}
-
-.btn:hover { background: #987543; }
-
-section { padding: 75px 7%; }
-
-.section-heading {
-  text-align: center;
-  margin-bottom: 42px;
-}
-
-.section-heading h2 {
-  font-size: 38px;
-  margin-bottom: 8px;
-}
-
-.section-heading p { color: var(--muted); }
-
-.cars {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-}
-
-.car-card {
-  background: white;
-  border-radius: 9px;
-  overflow: hidden;
-  box-shadow: 0 8px 25px #0000000b;
-  transition: transform .3s;
-}
-
-.car-card:hover { transform: translateY(-5px); }
-
-.car-image {
-  height: 220px;
-  background: #e9e8e3;
-  overflow: hidden;
-}
-
-.car-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.car-info { padding: 23px; }
-
-.car-info h3 {
-  font-size: 23px;
-  margin-bottom: 6px;
-}
-
-.car-info p {
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.car-info a {
-  display: inline-block;
-  margin-top: 15px;
-  color: #997747;
-  text-decoration: none;
-  font-weight: 700;
-}
-
-.services { background: white; }
-
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
-}
-
-.service {
-  padding: 30px;
-  background: var(--cream);
-  border-radius: 8px;
-}
-
-.service h3 {
-  font-size: 22px;
-  margin-bottom: 9px;
-}
-
-.service p {
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.booking { background: #f0ece2; }
-
-.booking-form {
-  max-width: 720px;
-  margin: auto;
-  background: white;
-  padding: 32px;
-  border-radius: 9px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-}
-
-.booking-form label {
-  font-weight: 700;
-  font-size: 13px;
-}
-
-.booking-form input,
-.booking-form select,
-.booking-form textarea {
-  width: 100%;
-  padding: 13px;
-  margin-top: 7px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font: inherit;
-}
-
-.booking-form textarea {
-  min-height: 100px;
-  resize: vertical;
-}
-
-.full { grid-column: 1 / -1; }
-
-.booking-form button {
-  width: 100%;
-  margin-top: 0;
-}
-
-.contact {
-  text-align: center;
-  background: var(--dark);
-  color: white;
-}
-
-.contact p {
-  color: #ddd;
-  margin-top: 10px;
-}
-
-footer {
-  background: #151a16;
-  color: #bbb;
-  text-align: center;
-  padding: 24px;
-  font-size: 13px;
-}
-
-.whatsapp-float {
-  position: fixed;
-  right: 22px;
-  bottom: 22px;
-  z-index: 200;
-  background: #25d366;
-  color: white;
-  text-decoration: none;
-  padding: 13px 19px;
-  border-radius: 30px;
-  font-weight: 700;
-  box-shadow: 0 4px 15px #0003;
-}
-
-@media(max-width: 650px) {
-  header {
-    padding: 15px 5%;
-    flex-wrap: wrap;
-    gap: 12px;
+  <!-- Business structured information -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRental",
+    "name": "Vasanth Car Rentals",
+    "url": "https://akashakash829002345-pixel.github.io/vasanth-car-rentals2/",
+    "telephone": "+919573373015",
+    "description": "Car rental enquiries in Bapatla, Andhra Pradesh, including Dzire, Innova Crysta, Ertiga, Etios and Kia Carens.",
+    "areaServed": {
+      "@type": "City",
+      "name": "Bapatla",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Andhra Pradesh"
+      }
+    }
   }
+  </script>
 
-  nav {
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
+  <style>
+    :root {
+      --dark: #202720;
+      --gold: #b99561;
+      --cream: #f7f5ef;
+      --white: #fff;
+      --muted: #777d76;
+    }
 
-  nav a { font-size: 12px; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  .hero {
-    min-height: 450px;
-    padding: 55px 6%;
-  }
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
 
-  section { padding: 55px 5%; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--dark);
+      line-height: 1.7;
+    }
 
-  .section-heading h2 { font-size: 31px; }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
 
-  .booking-form { grid-template-columns: 1fr; padding: 22px; }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 7%;
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 3px 15px #0000000b;
+    }
 
-  .full { grid-column: auto; }
-}
-</style>
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 23px;
+      font-weight: 700;
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    nav {
+      display: flex;
+      gap: 23px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--dark);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    .hero {
+      min-height: 570px;
+      display: flex;
+      align-items: center;
+      padding: 70px 8%;
+      color: white;
+      background:
+        linear-gradient(90deg, #111d 0%, #1119 55%, #1114 100%),
+        url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+    }
+
+    .hero-content {
+      max-width: 680px;
+    }
+
+    .eyebrow {
+      color: #e6c795;
+      letter-spacing: 3px;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 6vw, 68px);
+      line-height: 1.15;
+      margin: 18px 0;
+    }
+
+    .hero p {
+      max-width: 550px;
+      color: #eee;
+      font-size: 17px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: white;
+      text-decoration: none;
+      border: none;
+      border-radius: 4px;
+      padding: 14px 26px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 24px;
+      transition: .2s;
+    }
+
+    .btn:hover {
+      background: #987543;
+    }
+
+    section {
+      padding: 75px 7%;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 42px;
+    }
+
+    .section-heading h2 {
+      font-size: 38px;
+      margin-bottom: 8px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    .cars {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .car-card {
+      background: white;
+      border-radius: 9px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px #0000000b;
+      transition: transform .3s;
+    }
+
+    .car-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .car-image {
+      height: 220px;
+      background: #e9e8e3;
+      overflow: hidden;
+    }
+
+    .car-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .car-info {
+      padding: 23px;
+    }
+
+    .car-info h3 {
+      font-size: 22px;
+      margin-bottom: 6px;
+    }
+
+    .car-info p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .car-info a {
+      display: inline-block;
+      margin-top: 15px;
+      color: #997747;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .services {
+      background: white;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .service {
+      padding: 30px;
+      background: var(--cream);
+      border-radius: 8px;
+    }
+
+    .service h3 {
+      font-size: 22px;
+      margin-bottom: 9px;
+    }
+
+    .service p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .local-seo {
+      background: white;
+    }
+
+    .local-content {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .local-content h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .local-content h3 {
+      font-size: 22px;
+      margin: 24px 0 8px;
+    }
+
+    .local-content p {
+      color: #626960;
+      margin-bottom: 12px;
+    }
+
+    .local-content ul {
+      padding-left: 22px;
+      color: #626960;
+    }
+
+    .faq {
+      background: var(--cream);
+    }
+
+    .faq-list {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .faq details {
+      background: white;
+      padding: 20px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+    }
+
+    .faq summary {
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .faq details p {
+      color: var(--muted);
+      margin-top: 12px;
+    }
+
+    .booking {
+      background: #f0ece2;
+    }
+
+    .booking-form {
+      max-width: 720px;
+      margin: auto;
+      background: white;
+      padding: 32px;
+      border-radius: 9px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .booking-form label {
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form textarea {
+      width: 100%;
+      padding: 13px;
+      margin-top: 7px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font: inherit;
+    }
+
+    .booking-form textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .full {
+      grid-column: 1 / -1;
+    }
+
+    .booking-form button {
+      width: 100%;
+      margin-top: 0;
+    }
+
+    #bookingMessage {
+      display: none;
+      text-align: center;
+      padding: 20px;
+      color: #287548;
+      font-weight: bold;
+    }
+
+    .contact {
+      text-align: center;
+      background: var(--dark);
+      color: white;
+    }
+
+    .contact p {
+      color: #ddd;
+      margin-top: 10px;
+    }
+
+    footer {
+      background: #151a16;
+      color: #bbb;
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 200;
+      background: #25d366;
+      color: white;
+      text-decoration: none;
+      padding: 13px 19px;
+      border-radius: 30px;
+      font-weight: 700;
+      box-shadow: 0 4px 15px #0003;
+    }
+
+    @media(max-width: 650px) {
+      header {
+        padding: 15px 5%;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      nav {
+        width: 100%;
+        gap: 12px;
+      }
+
+      nav a {
+        font-size: 12px;
+      }
+
+      .hero {
+        min-height: 450px;
+        padding: 55px 6%;
+      }
+
+      section {
+        padding: 55px 5%;
+      }
+
+      .section-heading h2 {
+        font-size: 31px;
+      }
+
+      .booking-form {
+        grid-template-columns: 1fr;
+        padding: 22px;
+      }
+
+      .full {
+        grid-column: auto;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
   <div class="logo">VASANTH <span>CAR RENTALS</span></div>
-  <nav>
+
+  <nav aria-label="Main navigation">
     <a href="#home">Home</a>
     <a href="#cars">Our Cars</a>
     <a href="#services">Services</a>
@@ -330,229 +466,390 @@ footer {
 
 <main>
 
-<section class="hero" id="home">
-  <div class="hero-content">
-    <div class="eyebrow">Premium Car Rentals · Bapatla</div>
-    <h1>Your Journey,<br>Our Responsibility.</h1>
-    <p>Discover comfortable, reliable and affordable car rentals for every journey. Choose your car and travel with confidence.</p>
-    <a href="#cars" class="btn">Explore Our Fleet</a>
-  </div>
-</section>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="eyebrow">Premium Car Rentals · Bapatla</div>
 
-<section id="cars">
-  <div class="section-heading">
-    <h2>Our Premium Fleet</h2>
-    <p>Choose the perfect vehicle for your journey.</p>
-  </div>
+      <h1>Car Rental in Bapatla for Every Journey.</h1>
 
-  <div class="cars">
+      <p>
+        Welcome to Vasanth Car Rentals. Explore comfortable car rental
+        options in Bapatla, Andhra Pradesh, for family trips, city travel
+        and outstation journeys.
+      </p>
 
-    <article class="car-card">
-      <div class="car-image">
-        <img src="https://www.autobics.com/wp-content/uploads/2024/11/2024-Maruti-Suzuki-Dzire-Alluring-Blue.jpg"
-             alt="Maruti Suzuki Dzire" loading="lazy">
-      </div>
-      <div class="car-info">
-        <h3>Maruti Suzuki Dzire</h3>
-        <p>Comfortable sedan · Family and city travel</p>
-        <a href="#booking">Enquire Now →</a>
-      </div>
-    </article>
-
-    <article class="car-card">
-      <div class="car-image">
-        <img src="https://asset.autocarindia.com/static/models/colors/20260605_050015_a9036017.jpg"
-             alt="Toyota Innova Crysta" loading="lazy">
-      </div>
-      <div class="car-info">
-        <h3>Toyota Innova Crysta</h3>
-        <p>Premium MPV · Family and long journeys</p>
-        <a href="#booking">Enquire Now →</a>
-      </div>
-    </article>
-
-    <article class="car-card">
-      <div class="car-image">
-        <img src="https://cdn-s3.autocarindia.com/legacy/cdni/ExtraImages/20220415113510_Ertiga_FL.jpg?q=75&w=728"
-             alt="Maruti Suzuki Ertiga" loading="lazy">
-      </div>
-      <div class="car-info">
-        <h3>Maruti Suzuki Ertiga</h3>
-        <p>7-seater MPV · Group and family travel</p>
-        <a href="#booking">Enquire Now →</a>
-      </div>
-    </article>
-
-    <article class="car-card">
-      <div class="car-image">
-        
-<img
-  src="https://commons.wikimedia.org/wiki/Special:FilePath/Toyota_Etios_1.5_(2019)_(52720617946).jpg"
-  alt="Toyota Etios 2019"
-  loading="lazy"
-  onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Toyota_Etios_(2019)_(52710355447).jpg';"
->
-
-      </div>
-      <div class="car-info">
-        <h3>Toyota Etios</h3>
-        <p>Practical sedan · Everyday travel</p>
-        <a href="#booking">Enquire Now →</a>
-      </div>
-    </article>
-
-    <article class="car-card">
-      <div class="car-image">
-        <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/Carens/x-line/2024/Carens_Digital_d.jpg"
-             alt="Kia Carens" loading="lazy">
-      </div>
-      <div class="car-info">
-        <h3>Kia Carens</h3>
-        <p>Modern family MPV · Premium comfort</p>
-        <a href="#booking">Enquire Now →</a>
-      </div>
-    </article>
-
-  </div>
-</section>
-
-<section class="services" id="services">
-  <div class="section-heading">
-    <h2>Our Services</h2>
-    <p>Travel your way with Vasanth Car Rentals.</p>
-  </div>
-
-  <div class="service-grid">
-    <div class="service">
-      <h3>Self-Drive Rentals</h3>
-      <p>Enjoy the freedom and flexibility of driving yourself.</p>
+      <a href="#cars" class="btn">Explore Our Fleet</a>
     </div>
-    <div class="service">
-      <h3>Cars with Driver</h3>
-      <p>Relax and enjoy your journey with a driver.</p>
-    </div>
-    <div class="service">
-      <h3>Outstation Trips</h3>
-      <p>Comfortable travel for long-distance journeys.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="booking" id="booking">
-  <div class="section-heading">
-    <h2>Book Your Journey</h2>
-    <p>Send your booking enquiry directly through WhatsApp.</p>
-  </div>
-
-  <form class="booking-form" id="bookingForm">
-    <div>
-      <label for="customerName">Your Name</label>
-      <input id="customerName" type="text" placeholder="Enter your name" required>
+  <!-- CARS -->
+  <section id="cars">
+    <div class="section-heading">
+      <h2>Our Car Rental Fleet in Bapatla</h2>
+      <p>Choose the vehicle that suits your journey.</p>
     </div>
 
-    <div>
-      <label for="customerPhone">Mobile Number</label>
-      <input id="customerPhone" type="tel" inputmode="numeric"
-             pattern="[0-9]{10}" maxlength="10"
-             placeholder="10-digit mobile number" required>
+    <div class="cars">
+
+      <article class="car-card">
+        <div class="car-image">
+          <img
+            src="https://www.autobics.com/wp-content/uploads/2024/11/2024-Maruti-Suzuki-Dzire-Alluring-Blue.jpg"
+            alt="Maruti Suzuki Dzire car rental in Bapatla"
+            loading="lazy">
+        </div>
+        <div class="car-info">
+          <h3>Maruti Suzuki Dzire</h3>
+          <p>Comfortable sedan for family and city travel.</p>
+          <a href="#booking">Enquire Now →</a>
+        </div>
+      </article>
+
+      <article class="car-card">
+        <div class="car-image">
+          <img
+            src="https://asset.autocarindia.com/static/models/colors/20260605_050015_a9036017.jpg"
+            alt="Toyota Innova Crysta rental in Bapatla"
+            loading="lazy">
+        </div>
+        <div class="car-info">
+          <h3>Toyota Innova Crysta</h3>
+          <p>Premium MPV for family and long-distance journeys.</p>
+          <a href="#booking">Enquire Now →</a>
+        </div>
+      </article>
+
+      <article class="car-card">
+        <div class="car-image">
+          <img
+            src="https://cdn-s3.autocarindia.com/legacy/cdni/ExtraImages/20220415113510_Ertiga_FL.jpg?q=75&w=728"
+            alt="Maruti Suzuki Ertiga 7 seater rental in Bapatla"
+            loading="lazy">
+        </div>
+        <div class="car-info">
+          <h3>Maruti Suzuki Ertiga</h3>
+          <p>7-seater MPV for group and family travel.</p>
+          <a href="#booking">Enquire Now →</a>
+        </div>
+      </article>
+
+      <article class="car-card">
+        <div class="car-image">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Toyota_Etios_1.5_(2019)_(52720617946).jpg"
+            alt="Toyota Etios sedan rental in Bapatla"
+            loading="lazy"
+            onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Toyota_Etios_(2019)_(52710355447).jpg';">
+        </div>
+        <div class="car-info">
+          <h3>Toyota Etios</h3>
+          <p>Practical sedan for comfortable everyday travel.</p>
+          <a href="#booking">Enquire Now →</a>
+        </div>
+      </article>
+
+      <article class="car-card">
+        <div class="car-image">
+          <img
+            src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/Carens/x-line/2024/Carens_Digital_d.jpg"
+            alt="Kia Carens family car rental in Bapatla"
+            loading="lazy">
+        </div>
+        <div class="car-info">
+          <h3>Kia Carens</h3>
+          <p>Modern family MPV with comfortable interiors.</p>
+          <a href="#booking">Enquire Now →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-heading">
+      <h2>Our Car Rental Services</h2>
+      <p>Travel your way with Vasanth Car Rentals in Bapatla.</p>
     </div>
 
-    <div>
-      <label for="carChoice">Select Car</label>
-      <select id="carChoice" required>
-        <option value="">Choose a car</option>
-        <option>Maruti Suzuki Dzire</option>
-        <option>Toyota Innova Crysta</option>
-        <option>Maruti Suzuki Ertiga</option>
-        <option>Toyota Etios</option>
-        <option>Kia Carens</option>
-      </select>
+    <div class="service-grid">
+
+      <div class="service">
+        <h3>Self-Drive Rentals</h3>
+        <p>
+          Enquire about self-drive car rental options for flexible
+          travel and personal journeys.
+        </p>
+      </div>
+
+      <div class="service">
+        <h3>Cars with Driver</h3>
+        <p>
+          Ask about car rental with driver for comfortable
+          family trips and other journeys.
+        </p>
+      </div>
+
+      <div class="service">
+        <h3>Outstation Trips</h3>
+        <p>
+          Contact us for outstation travel enquiries from
+          Bapatla to your preferred destination.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LOCAL SEO CONTENT -->
+  <section class="local-seo">
+    <div class="local-content">
+
+      <h2>Looking for Car Rental in Bapatla?</h2>
+
+      <p>
+        Vasanth Car Rentals provides car rental enquiries for customers
+        in Bapatla, Andhra Pradesh. Whether you are planning a family
+        journey, a local trip or outstation travel, explore our available
+        vehicle options and contact us for details.
+      </p>
+
+      <h3>Cars Available for Rental Enquiries</h3>
+
+      <p>
+        Our listed fleet includes Maruti Suzuki Dzire, Toyota Innova
+        Crysta, Maruti Suzuki Ertiga, Toyota Etios and Kia Carens.
+        Contact us to confirm vehicle availability, rental terms
+        and pricing for your travel date.
+      </p>
+
+      <h3>Car Rental Services in Bapatla and Nearby Areas</h3>
+
+      <p>
+        If you are searching online for car rental in Bapatla,
+        self-drive cars, family car rentals or outstation travel,
+        contact Vasanth Car Rentals to discuss your requirements.
+      </p>
+
+      <h3>Contact Vasanth Car Rentals</h3>
+
+      <p>
+        Call or WhatsApp us at
+        <a href="tel:+919573373015">9573373015</a>
+        for booking enquiries and vehicle availability.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="section-heading">
+      <h2>Frequently Asked Questions</h2>
+      <p>Common questions about car rentals in Bapatla.</p>
     </div>
 
-    <div>
-      <label for="travelDate">Travel Date</label>
-      <input id="travelDate" type="date" required>
+    <div class="faq-list">
+
+      <details>
+        <summary>Where is Vasanth Car Rentals located?</summary>
+        <p>
+          Vasanth Car Rentals serves customers in Bapatla,
+          Andhra Pradesh. Contact us for office and service details.
+        </p>
+      </details>
+
+      <details>
+        <summary>Which cars can I enquire about?</summary>
+        <p>
+          You can enquire about Dzire, Innova Crysta, Ertiga,
+          Etios and Kia Carens.
+        </p>
+      </details>
+
+      <details>
+        <summary>Can I enquire about outstation travel?</summary>
+        <p>
+          Yes. Contact Vasanth Car Rentals with your destination
+          and travel date to discuss an outstation journey.
+        </p>
+      </details>
+
+      <details>
+        <summary>How can I contact Vasanth Car Rentals?</summary>
+        <p>
+          Call or WhatsApp 9573373015 to enquire about
+          vehicle availability and booking details.
+        </p>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="booking" id="booking">
+
+    <div class="section-heading">
+      <h2>Book Your Journey</h2>
+      <p>Send your booking enquiry directly through WhatsApp.</p>
     </div>
 
-    <div class="full">
-      <label for="travelDetails">Travel Details</label>
-      <textarea id="travelDetails"
-                placeholder="Pickup location, destination and other details"></textarea>
+    <form class="booking-form" id="bookingForm">
+
+      <div>
+        <label for="customerName">Your Name</label>
+        <input
+          id="customerName"
+          type="text"
+          placeholder="Enter your name"
+          autocomplete="name"
+          required>
+      </div>
+
+      <div>
+        <label for="customerPhone">Mobile Number</label>
+        <input
+          id="customerPhone"
+          type="tel"
+          inputmode="numeric"
+          pattern="[0-9]{10}"
+          maxlength="10"
+          placeholder="10-digit mobile number"
+          required>
+      </div>
+
+      <div>
+        <label for="carChoice">Select Car</label>
+        <select id="carChoice" required>
+          <option value="">Choose a car</option>
+          <option>Maruti Suzuki Dzire</option>
+          <option>Toyota Innova Crysta</option>
+          <option>Maruti Suzuki Ertiga</option>
+          <option>Toyota Etios</option>
+          <option>Kia Carens</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="travelDate">Travel Date</label>
+        <input id="travelDate" type="date" required>
+      </div>
+
+      <div class="full">
+        <label for="travelDetails">Travel Details</label>
+        <textarea
+          id="travelDetails"
+          placeholder="Pickup location, destination and other details"></textarea>
+      </div>
+
+      <div class="full">
+        <button class="btn" type="submit">
+          Send Enquiry on WhatsApp
+        </button>
+      </div>
+
+    </form>
+
+    <p id="bookingMessage" aria-live="polite"></p>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+
+    <div class="section-heading">
+      <h2>Let's Plan Your Journey</h2>
+      <p>Vasanth Car Rentals · Bapatla, Andhra Pradesh</p>
     </div>
 
-    <div class="full">
-      <button class="btn" type="submit">
-        Send Enquiry on WhatsApp
-      </button>
-    </div>
-  </form>
-  
-<p id="bookingMessage"
-   style="display:none;text-align:center;padding:20px;color:#287548;font-weight:bold;">
-</p>
+    <p>Call / WhatsApp:
+      <strong>9573373015</strong>
+    </p>
 
-</section>
+    <a class="btn"
+       href="https://wa.me/919573373015"
+       target="_blank"
+       rel="noopener">
+      Chat on WhatsApp
+    </a>
 
-<section class="contact" id="contact">
-  <div class="section-heading">
-    <h2>Let's Plan Your Journey</h2>
-    <p>Vasanth Car Rentals · Bapatla, Andhra Pradesh</p>
-  </div>
-
-  <p>Call / WhatsApp: <strong>9573373015</strong></p>
-  <a class="btn" href="https://wa.me/919573373015"
-     target="_blank" rel="noopener">Chat on WhatsApp</a>
-</section>
+  </section>
 
 </main>
 
 <footer>
-  © 2026 Vasanth Car Rentals. Bapatla, Andhra Pradesh.
-  All rights reserved.
+  © 2026 Vasanth Car Rentals.
+  Bapatla, Andhra Pradesh. All rights reserved.
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/919573373015"
-   target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<a class="whatsapp-float"
+   href="https://wa.me/919573373015"
+   target="_blank"
+   rel="noopener"
+   aria-label="Chat with Vasanth Car Rentals on WhatsApp">
   WhatsApp
 </a>
 
 <script>
-const dateInput = document.getElementById('travelDate');
+  // Set minimum travel date to today
+  const dateInput = document.getElementById('travelDate');
 
-const now = new Date();
-const localDate = new Date(
-  now.getTime() - now.getTimezoneOffset() * 60000
-).toISOString().split('T')[0];
+  const now = new Date();
 
-dateInput.min = localDate;
+  const localDate = new Date(
+    now.getTime() - now.getTimezoneOffset() * 60000
+  ).toISOString().split('T')[0];
 
-document.getElementById('bookingForm').addEventListener('submit', function(event) {
-  event.preventDefault();
+  dateInput.min = localDate;
 
-  const name = document.getElementById('customerName').value.trim();
-  const phone = document.getElementById('customerPhone').value.trim();
-  const car = document.getElementById('carChoice').value;
-  const date = dateInput.value;
-  const details = document.getElementById('travelDetails').value.trim();
+  // WhatsApp booking enquiry
+  document.getElementById('bookingForm').addEventListener(
+    'submit',
+    function(event) {
 
-  if (!/^[0-9]{10}$/.test(phone)) {
-    alert('Please enter a valid 10-digit mobile number.');
-    return;
-  }
+      event.preventDefault();
 
-  const message =
-    'Hello Vasanth Car Rentals! I would like to enquire about a booking.\n\n' +
-    'Name: ' + name + '\n' +
-    'Mobile: ' + phone + '\n' +
-    'Car: ' + car + '\n' +
-    'Travel Date: ' + date + '\n' +
-    'Travel Details: ' + details;
+      const name = document.getElementById('customerName').value.trim();
+      const phone = document.getElementById('customerPhone').value.trim();
+      const car = document.getElementById('carChoice').value;
+      const date = dateInput.value;
+      const details = document.getElementById('travelDetails').value.trim();
 
-  const whatsappURL =
-    'https://wa.me/919573373015?text=' + encodeURIComponent(message);
+      if (!/^[0-9]{10}$/.test(phone)) {
+        alert('Please enter a valid 10-digit mobile number.');
+        return;
+      }
 
-  window.open(whatsappURL, '_blank');
-});
+      const message =
+        'Hello Vasanth Car Rentals! I would like to enquire about a booking.\n\n' +
+        'Name: ' + name + '\n' +
+        'Mobile: ' + phone + '\n' +
+        'Car: ' + car + '\n' +
+        'Travel Date: ' + date + '\n' +
+        'Travel Details: ' + details;
+
+      const whatsappURL =
+        'https://wa.me/919573373015?text=' +
+        encodeURIComponent(message);
+
+      window.open(whatsappURL, '_blank');
+
+      const bookingMessage = document.getElementById('bookingMessage');
+
+      bookingMessage.style.display = 'block';
+
+      bookingMessage.textContent =
+        'Thank you, ' + name +
+        '! Your booking enquiry for ' + car +
+        ' has been prepared. Please send the WhatsApp message to contact our team and confirm availability.';
+
+      bookingMessage.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+      });
+    }
+  );
 </script>
 
 </body>
