@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://akashakash829002345-pixel.github.io/vasanth-car-rentals2/sitemap.xml
